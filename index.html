@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="BigVideo/css/bigvideo.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -122,11 +123,13 @@
     </ul>
 </nav>
 
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="//vjs.zencdn.net/4.3/video.js"></script>
+<script src="BigVideo/lib/bigvideo.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -144,6 +147,15 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
+
+
+
+    $(function() {
+        var BV = new $.BigVideo({container: $('.content')});
+        BV.init();
+        BV.show('http://vjs.zencdn.net/v/oceans.mp4');
+    });
+
 </script>
 </body>
 </html>

@@ -1,3 +1,10 @@
+html,body { height: 100%; margin: 0px; padding: 0px; }
+.content { background: #0f0; height: 100% }
+
+
 .content{
     margin-left: 70px;
+    background-color: red;
+    float: left;
+    width: calc(100% - 61px);
 }
