@@ -4,7 +4,7 @@ html,body { height: 100%; margin: 0px; padding: 0px; }
 
 .content{
     margin-left: 70px;
-    background-color: red;
+    background-color: black;
     float: left;
     width: calc(100% - 61px);
 }
